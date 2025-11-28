@@ -21,11 +21,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# Inicializar cliente OpenAI
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-openai_client = OpenAI(api_key=OPENAI_API_KEY)
-
-
 def extraer_texto_pdf(archivo_pdf):
     """
     Extrae el texto de un archivo PDF usando pdfplumber (principal)
